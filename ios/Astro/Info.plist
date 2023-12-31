@@ -26,14 +26,13 @@
 	<true/>
 	<key>NSAppTransportSecurity</key>
 	<dict>
-	  <!-- Do not change NSAllowsArbitraryLoads to true, or you will risk app rejection! -->
 		<key>NSAllowsArbitraryLoads</key>
 		<false/>
 		<key>NSAllowsLocalNetworking</key>
 		<true/>
 	</dict>
 	<key>NSLocationWhenInUseUsageDescription</key>
-	<string></string>
+	<string/>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIRequiredDeviceCapabilities</key>
@@ -48,5 +47,56 @@
 	</array>
 	<key>UIViewControllerBasedStatusBarAppearance</key>
 	<false/>
+	<key>UIAppFonts</key>
+	<array>
+		<string>Cinzel-Black.ttf</string>
+		<string>Cinzel-Bold.ttf</string>
+		<string>Cinzel-ExtraBold.ttf</string>
+		<string>Cinzel-Medium.ttf</string>
+		<string>Cinzel-Regular.ttf</string>
+		<string>Cinzel-SemiBold.ttf</string>
+		<string>GreatVibes-Regular.ttf</string>
+		<string>JosefinSans-Bold.ttf</string>
+		<string>JosefinSans-BoldItalic.ttf</string>
+		<string>JosefinSans-ExtraLight.ttf</string>
+		<string>JosefinSans-ExtraLightItalic.ttf</string>
+		<string>JosefinSans-Italic.ttf</string>
+		<string>JosefinSans-Light.ttf</string>
+		<string>JosefinSans-LightItalic.ttf</string>
+		<string>JosefinSans-Medium.ttf</string>
+		<string>JosefinSans-MediumItalic.ttf</string>
+		<string>JosefinSans-Regular.ttf</string>
+		<string>JosefinSans-SemiBold.ttf</string>
+		<string>JosefinSans-SemiBoldItalic.ttf</string>
+		<string>JosefinSans-Thin.ttf</string>
+		<string>JosefinSans-ThinItalic.ttf</string>
+		<string>LobsterTwo-Bold.ttf</string>
+		<string>LobsterTwo-BoldItalic.ttf</string>
+		<string>LobsterTwo-Italic.ttf</string>
+		<string>LobsterTwo-Regular.ttf</string>
+		<string>MontserratAlternates-Black.ttf</string>
+		<string>MontserratAlternates-BlackItalic.ttf</string>
+		<string>MontserratAlternates-Bold.ttf</string>
+		<string>MontserratAlternates-BoldItalic.ttf</string>
+		<string>MontserratAlternates-ExtraBold.ttf</string>
+		<string>MontserratAlternates-ExtraBoldItalic.ttf</string>
+		<string>MontserratAlternates-ExtraLight.ttf</string>
+		<string>MontserratAlternates-ExtraLightItalic.ttf</string>
+		<string>MontserratAlternates-Italic.ttf</string>
+		<string>MontserratAlternates-Light.ttf</string>
+		<string>MontserratAlternates-LightItalic.ttf</string>
+		<string>MontserratAlternates-Medium.ttf</string>
+		<string>MontserratAlternates-MediumItalic.ttf</string>
+		<string>MontserratAlternates-Regular.ttf</string>
+		<string>MontserratAlternates-SemiBold.ttf</string>
+		<string>MontserratAlternates-SemiBoldItalic.ttf</string>
+		<string>MontserratAlternates-Thin.ttf</string>
+		<string>MontserratAlternates-ThinItalic.ttf</string>
+		<string>Quicksand-Bold.ttf</string>
+		<string>Quicksand-Light.ttf</string>
+		<string>Quicksand-Medium.ttf</string>
+		<string>Quicksand-Regular.ttf</string>
+		<string>Quicksand-SemiBold.ttf</string>
+	</array>
 </dict>
 </plist>
