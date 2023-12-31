@@ -40,7 +40,7 @@ const Details = () => {
   const addedHandle = () =>{
 
       setIsAdd(true);
-      dispatch(addFav(final.recipe))
+      dispatch(addFav(final.recipe.uri))
       setIsALreadyFav(true)
 
   }
