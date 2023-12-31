@@ -30,6 +30,13 @@ const Details = () => {
     setIsIngredients(true);
     setIsMethod(false);
   }
+  useEffect(() => {
+    if(favData.find((item)=>item.uri==final.uri)) setIsALreadyFav(true)
+    else setIsALreadyFav(false)
+  
+   
+  }, [])
+  
 
 
   const methodHandle = () => {
