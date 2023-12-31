@@ -12,8 +12,6 @@ const Details = () => {
   const dispatch = useDispatch();
   const foodData = useSelector(state => state.food.data);
   const favData = useSelector(state => state.food.favorites);
-  
-  console.log(favData.uri); 
 
 
   const [isIngredients, setIsIngredients] = useState(true);
