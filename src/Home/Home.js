@@ -1,5 +1,5 @@
 import { View, Text, StyleSheet, FlatList, Image, Pressable, TouchableOpacity } from 'react-native'
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import Search from '../Search/Search'
 import { useNavigation } from '@react-navigation/native'
 import { useDispatch, useSelector } from 'react-redux'
@@ -51,7 +51,7 @@ const Home = () => {
       useEffect(() => {        
       
        filterData()
-      }, [setSearchTerm])
+      }, [searchTerm])
       
 
     const contentHandle = (item) => {

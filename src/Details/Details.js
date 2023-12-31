@@ -12,8 +12,6 @@ const Details = () => {
   const dispatch = useDispatch();
   const foodData = useSelector(state => state.food.data);
   const favData = useSelector(state => state.food.favorites);
-  
-  console.log(favData.uri); 
 
 
   const [isIngredients, setIsIngredients] = useState(true);
@@ -47,7 +45,7 @@ const Details = () => {
   const addedHandle = () =>{
 
       setIsAdd(true);
-      dispatch(addFav(final.recipe.uri))
+      dispatch(addFav(final.recipe))
       setIsALreadyFav(true)
 
   }

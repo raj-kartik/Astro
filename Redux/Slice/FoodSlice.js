@@ -12,12 +12,12 @@ const FoodSlice = createSlice({
             state.data = [...state.data, ...action.payload ];
         },
         addFav: (state,action) =>{
-            if(state.favorites.find((item)=>item == action.payload)) {}
+            if(state.favorites.find((item)=>item.uri == action.payload.uri )) {}
             else  state.favorites.push(action.payload);
         },
 
         removeFav: (state,action) =>{
-            state.favorites = state.favorites.filter((item)=>item !== action.payload );
+            state.favorites = state.favorites.filter((item)=>item.uri !== action.payload );
         }
     }
 });
