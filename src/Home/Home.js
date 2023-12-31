@@ -11,6 +11,8 @@ const Home = () => {
 
     const dispatch = useDispatch();
     const foodData = useSelector((state) => state.food.data);
+    const [searchTerm, setSearchTerm] = useState("")
+    const [currentData, setCurrentData] = useState([])
 
 
     // console.log(foodData);
@@ -20,6 +22,12 @@ const Home = () => {
     useEffect(() => {
         fetchData();
     }, []);
+
+    useEffect(() => {
+      setCurrentData(foodData)   
+      
+    }, [foodData])
+    
 
     const fetchData = async () => {
         try {
@@ -33,7 +41,18 @@ const Home = () => {
         }
     };
 
+    const filterData = () => {
+        const searchData=foodData.filter(item =>
+            item.recipe.label.toLowerCase().includes(searchTerm.toLowerCase())
+        );
+        setCurrentData(searchData)
+      };
 
+      useEffect(() => {        
+      
+       filterData()
+      }, [setSearchTerm])
+      
 
     const contentHandle = (item) => {
         // console.log(item.image);
@@ -69,7 +88,7 @@ const Home = () => {
     return (
         <View style={{ flex: 1, backgroundColor: '#f7edd2' }} >
             <View style={styles.searchView} >
-                <Search />
+                <Search searchText={searchTerm} setSearchText={setSearchTerm} />
             </View>
 
             {/* suggestion */}
@@ -77,7 +96,7 @@ const Home = () => {
                 <View style={{ flex: 1 }} >
                     <FlatList
                         numColumns={2}
-                        data={foodData}
+                        data={currentData}
                         keyExtractor={keyExtractor}  // Replace 'id' with the actual unique identifier of each item
                         renderItem={renderItem}
                     />

@@ -4,12 +4,10 @@ import Icon from 'react-native-vector-icons/AntDesign';
 import { useSelector } from 'react-redux';
 
 
-const Search = () => {
+const Search = (searchText, setSearchText) => {
 
-  const [searchText, setSearchText] = useState('');
+ 
 
-
-  const data = useSelector(state => state.food.data );
 
   const handleSearchText = (text) =>{
     setSearchText(text);
@@ -31,15 +29,7 @@ const Search = () => {
 
         </View>
 
-        <FlatList
-        data={data}
-        keyExtractor={(item) => item.recipe.uri}
-        renderItem={({ item }) => (
-          <View style={{ padding: 10 }}>
-            <Text>{item.name}</Text>
-          </View>
-        )}
-      />
+        
     </View>
   )
 }
