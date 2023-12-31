@@ -10,7 +10,6 @@ const AddFav = () => {
   const navigation = useNavigation();
   const dispatch = useDispatch();
   const favData = useSelector((state) => state.food.favorites);
-1
 
   // console.log({favData});
 
