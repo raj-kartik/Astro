@@ -97,7 +97,7 @@ const Home = () => {
                     <FlatList
                         numColumns={2}
                         data={currentData}
-                        keyExtractor={keyExtractor}  // Replace 'id' with the actual unique identifier of each item
+                        keyExtractor={keyExtractor} 
                         renderItem={renderItem}
                     />
                 </View>

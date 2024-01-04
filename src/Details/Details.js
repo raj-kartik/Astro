@@ -1,5 +1,5 @@
 import { View, Text, Image, StyleSheet, ScrollView, Pressable, ImageBackground, TouchableOpacity } from 'react-native'
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { useNavigation, useRoute } from '@react-navigation/native'
 import { useDispatch, useSelector } from 'react-redux'
 import { addFav } from '../../Redux/Slice/FoodSlice'
